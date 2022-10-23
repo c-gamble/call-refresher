@@ -1,0 +1,16 @@
+{
+  "name": "calls",
+  "version": "1.0.0",
+  "description": "automated caller for LRT phone number",
+  "main": "caller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node caller.js"
+  },
+  "author": "c-gamble",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "twilio": "^3.83.0"
+  }
+}
