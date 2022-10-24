@@ -11,7 +11,8 @@ client.calls.create({url: 'http://demo.twilio.com/docs/voice.xml', from: '+13464
 .catch(error => console.log(error));
 
 const call = new CronJob(
-    '* * */10 * *', 
+    //'* * */10 * *', 
+    '*/5 * * * *',
     client.calls
     .create({url: 'http://demo.twilio.com/docs/voice.xml', from: '+13464895614', to: '+15072990714'})
     .then(call => console.log(call.sid))
